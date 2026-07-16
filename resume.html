@@ -151,7 +151,7 @@
         .project ul li {
             font-size: 13.5px;
             margin-bottom: 2px;
-            font-weight: 700;
+            font-weight: 400;
             list-style: none;
         }
 
@@ -163,15 +163,17 @@
             font-size: 13px;
             margin-top: 2px;
             margin-left: 18px;
+            font-weight: 400;
         }
 
         .project .links a {
             color: #111;
             text-decoration: none;
+            font-weight: 400;
         }
 
         .project .links strong {
-            font-weight: 700;
+            font-weight: 400;
         }
 
         /* ── Experience ── */
@@ -265,8 +267,23 @@
             color: #000;
         }
 
+        .project,
         .project ul li,
         .project .links,
+        .project .links *,
+        .project-title .tech {
+            font-weight: 400 !important;
+            color: #000;
+            font-synthesis: none;
+            -webkit-text-stroke: 0;
+            text-shadow: none;
+        }
+
+        .project-title {
+            font-weight: 700 !important;
+            color: #000;
+        }
+
         .exp-item ul li,
         .exp-company {
             font-weight: 700;
@@ -354,28 +371,28 @@
             <div class="project">
                 <div class="project-title">1. Foodash – Food Delivery App &nbsp;<span class="tech">| Flutter, Node.js, Firebase, MySQL</span></div>
                 <ul>
-                    <li>Built end-to-end food delivery app with restaurant browsing, cart, and real-time order placement for 3+ restaurant modules.</li>
-                    <li>Architected RESTful backend with Node.js handling order lifecycle, user auth, and menu management.</li>
-                    <li>Achieved smooth cross-device UI performance through Flutter widget optimization and state management.</li>
+                    <li>Developed a full-stack food delivery platform with restaurant listings, cart management, and order placement workflows.</li>
+                    <li>Built RESTful Node.js services for authentication, menu management, order tracking, and restaurant-side operations.</li>
+                    <li>Integrated Firebase and MySQL to support reliable data storage, real-time updates, and scalable app workflows.</li>
                 </ul>
                 <div class="links"><strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab/Foodash_--_Food_Delivery_App">github.com/AhnafwadudArnab/Foodash_--_Food_Delivery_App</a></div>
             </div>
             <div class="project">
                 <div class="project-title">2. Amar Rail Sheba – Railway Management System &nbsp;<span class="tech">| Flutter, Node.js, MySQL</span></div>
                 <ul>
-                    <li>Developed full-featured railway app supporting train search, seat selection, and ticket booking workflows.</li>
-                    <li>Designed normalized MySQL schema managing schedules, routes, and passenger records efficiently.</li>
-                    <li>Reduced booking flow complexity by 40% through streamlined UI and intuitive navigation design.</li>
+                    <li>Created a railway booking system with train search, route discovery, seat selection, and ticket reservation features.</li>
+                    <li>Designed normalized MySQL tables for schedules, routes, passengers, bookings, and seat availability.</li>
+                    <li>Implemented an intuitive booking flow that simplifies navigation from search to ticket confirmation.</li>
                 </ul>
-                <div class="links"><strong>Live:</strong> <a href="https://amar-rail-sheba.vercel.app">amar-rail-sheba.vercel.app</a> &nbsp;|&nbsp; <strong></strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab/Amar-Rail-sheba">github.com/AhnafwadudArnab/Amar-Rail-sheba</a></div>
+                <div class="links"><strong>Live:</strong> <a href="https://amar-rail-sheba.vercel.app">amar-rail-sheba.vercel.app</a> &nbsp;|&nbsp; <strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab/Amar-Rail-sheba">github.com/AhnafwadudArnab/Amar-Rail-sheba</a></div>
             </div>
 
             <div class="project">
                 <div class="project-title">3. BiteRight App &nbsp;<span class="tech">| React Native, MySQL, Node.js</span></div>
                 <ul>
-                    <li>Built a cross-platform diet and food tracking app with personalized meal logging and nutritional insights.</li>
-                    <li>Designed RESTful API with Node.js and MySQL supporting user profiles, food entries, and history tracking.</li>
-                    <li>Delivered responsive UI with React Native ensuring consistent experience on both iOS and Android.</li>
+                    <li>Built a cross-platform nutrition tracking app with meal logging, food history, and personalized diet insights.</li>
+                    <li>Developed Node.js APIs backed by MySQL for user profiles, food entries, nutritional records, and history tracking.</li>
+                    <li>Designed responsive React Native screens for a consistent mobile experience across Android and iOS.</li>
                 </ul>
                 <div class="links"><strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab/Biteright_app">github.com/AhnafwadudArnab/Biteright_app</a></div>
             </div>
@@ -383,19 +400,19 @@
             <div class="project">
                 <div class="project-title">4. Face Detection App &nbsp;<span class="tech">| Flutter, Python</span></div>
                 <ul>
-                    <li>Integrated OpenCV-based Python backend with Flutter frontend for real-time face detection via REST API.</li>
-                    <li>Achieved accurate detection results by fine-tuning ML model parameters for varied lighting conditions.</li>
-                    <li>Demonstrated practical AI/ML integration within a cross-platform mobile environment.</li>
+                    <li>Integrated a Flutter frontend with a Python/OpenCV backend for camera-based face detection workflows.</li>
+                    <li>Exposed detection functionality through REST API endpoints for clean separation between UI and ML processing.</li>
+                    <li>Tested detection behavior across varied lighting conditions to improve practical recognition reliability.</li>
                 </ul>
                 <div class="links"><strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab/FACE_DETECTION_APP">github.com/AhnafwadudArnab/FACE_DETECTION_APP</a></div>
             </div>
 
             <div class="project">
-                <div class="project-title">5. ElectroZoneBD – Online Electronics Shop &nbsp;<span class="tech">| Flutter, PHP , MySQL</span></div>
+                <div class="project-title">5. ElectroZoneBD – Online Electronics Shop &nbsp;<span class="tech">| Flutter, PHP, MySQL</span></div>
                 <ul>
-                    <li>Built a full-featured e-commerce app for electronics with product browsing, search, cart, and order placement.</li>
-                    <li>Integrated PHP and MySQL for backend functionality, ensuring data persistence and efficient database operations.</li>
-                    <li>Delivered a responsive, cross-platform UI with Flutter ensuring smooth shopping experience on mobile and web.</li>
+                    <li>Developed an electronics e-commerce app with product catalog browsing, search, cart, and order placement.</li>
+                    <li>Integrated PHP APIs and MySQL database operations for product, customer, and order data management.</li>
+                    <li>Built responsive Flutter interfaces to provide a smooth shopping experience across mobile and web views.</li>
                 </ul>
                 <div class="links"><strong>Live:</strong> <a href="https://electrozonebd.com">electrozonebd.com</a> &nbsp;|&nbsp; <strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab">github.com/AhnafwadudArnab</a></div>
             </div>
@@ -403,9 +420,9 @@
             <div class="project">
                 <div class="project-title">6. Chat Application &nbsp;<span class="tech">| Java</span></div>
                 <ul>
-                    <li>Implemented real-time bidirectional messaging using Java socket programming with multi-client support.</li>
-                    <li>Managed concurrent connections and message queuing for stable, low-latency communication.</li>
-                    <li>Built clean MVC-structured UI enabling seamless user interaction and session handling.</li>
+                    <li>Implemented a Java socket-based chat system supporting real-time bidirectional messaging.</li>
+                    <li>Handled multi-client connections with threaded communication for stable message delivery.</li>
+                    <li>Structured the application for clear session handling, user interaction, and maintainable Java code.</li>
                 </ul>
                 <div class="links"><strong>GitHub:</strong> <a href="https://github.com/AhnafwadudArnab/Chat-Application">github.com/AhnafwadudArnab/Chat-Application</a></div>
             </div>
@@ -491,7 +508,7 @@
         <div class="section">
             <div class="section-title">Languages</div>
             <div class="lang-line">
-                <strong>Bangla:</strong> Native/Fluent &nbsp;|&nbsp; <strong>English:</strong> Native/Fluent
+                <strong>Bangla:</strong> Native &nbsp;|&nbsp; <strong>English:</strong> Basic
                 &nbsp;|&nbsp; <strong>Hindi:</strong> Basic
             </div>
         </div>
